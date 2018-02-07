@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>干货</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/drysaltery.css">
+    <script>
+        document.onreadystatechange=function(){
+            if(document.readyState=='complete'){
+                $('.loading').fadeOut();
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 网页加载进度条 -->
+    <div class="loading">
+        <div class="pic"></div>
+    </div>
+    <!-- 头部搜索按钮 start-->
+    <div class="search"><a href="search.html?aaa=222"></a></div>
+    <!-- 头部搜索按钮 end-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- 训练 第一屏start -->
+            <div class="swiper-slide">
+                <!-- 轮播图课程展示 -->
+                <div class="showplay">
+                    <div class="showplay-1">
+                        <div class="swiper-container-h">
+                            <div class="swiper-wrapper train">
+                                <div class="swiper-slide">
+                                    <!-- <a href="#">
+                                        <div class="img"><img src="images/干货切图/pic_18@3x.png" alt=""></div>
+                                        <span>课程</span>
+                                    </a> -->
+                                </div>
+                                <div class="swiper-slide">
+                                </div>
+                                <div class="swiper-slide">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination-h">
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                                <span class="swiper-pagination-bullet"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 热门课程与查看更多 -->
+                    <div class="showplay-2">
+                        <span class="f-left">热门课程</span>
+                        <a href="lesson_all.html?title=全部课程" class="f-right">查看更多 ></a>
+                    </div>
+                    <!-- 课程列表 -->
+                    <ul class="showplay-3">
+                        <li>
+                            <!-- <a href="#">
+                                <div class="img"><img src="images/干货切图/pic_14@3x.png" alt=""></div>
+                                <div class="information">
+                                    <p>胸肌塑造初级课程</p>
+                                    <p>8节-初级</p>
+                                    <p>111111111人已参加</p>
+                                </div>
+                            </a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 训练 第一屏end -->
+
+            <!-- 饮食 第二屏start -->
+            <div class="swiper-slide">
+                <!-- 轮播图课程展示 -->
+                <div class="showplay1">
+                    <div class="showplay1-1">
+                        <div class="swiper-container-j">
+                            <div class="swiper-wrapper train-1">
+                                <div class="swiper-slide">
+                                    <!-- <a href="information.html">
+                                        <div class="img"><img src="images/干货切图/6.bmp" alt=""></div>
+                                        <span>推荐</span>
+                                    </a> -->
+                                </div>
+                                <div class="swiper-slide">
+                                </div>
+                                <div class="swiper-slide">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination-j">
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                                <span class="swiper-pagination-bullet"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 推荐饮食与查看更多 -->
+                    <div class="showplay1-3-1">
+                        <span class="f-left">推荐饮食</span>
+                        <a href="foodList.html" class="f-right">查看更多 ></a>
+                    </div>
+                    <!-- 推荐美食列表 -->
+                    <ul class="showplay1-4">
+                        <li>
+                            <!-- <a href="information.html">
+                                <div class="img"><img src="images/干货切图/pic_14@3x.png" alt=""></div>
+                                <div class="information">
+                                    <p>鹏哥666</p>
+                                </div>
+                            </a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 饮食 第二屏end -->
+        </div>
+        <!-- tab栏的头部导航按钮 -->
+        <div class="swiper-pagination">
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+            <span class="swiper-pagination-bullet"></span>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <a href="#">
+            <div>
+                <img src="images/干货切图/ico_shangchenghui@2x.png" height="28" alt="">
+                <span>商城</span>
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <img src="images/干货切图/ico_ganhuo@2x.png" height="28" alt="">
+                <span>干货</span>
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <img src="images/干货切图/ico_wodehui@2x.png" height="28" alt="">
+                <span>我的</span>
+            </div>
+        </a>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/drysaltery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/template.js"></script>
+    <script id="tpl0" type="text/html">
+        <!-- 干货训练头部轮播 -->
+        {{each obj as item}}
+        <div class="swiper-slide">
+            <a href="lesson.html?title={{item.title}}&drysalteryID={{item.drysalteryID}}&number=1">
+                <div class="img"><img src="http://www.mffive.com:8080{{item.picUrl}}" alt=""></div>
+                <span>课程</span>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+    <script id="tpl1" type="text/html">
+        <!-- 干货训练列表 -->
+        {{each obj as item}}
+        <li>
+            <a href="lesson.html?title={{item.title}}&drysalteryID={{item.drysalteryID}}&number=1">
+                <div class="img"><img src='http://www.mffive.com:8080{{item.picUrl}}' alt=""></div>
+                <div class="information">
+                    <p>{{item.title}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- 干货美食头部轮播 -->
+    <script id="tpl2" type="text/html">
+        {{each obj as item}}
+        <div class="swiper-slide">
+            <a href="information.html?title={{item.title}}&drysalteryFileID={{item.drysalteryFileID}}">
+                <div class="img"><img src="http://www.mffive.com:8080{{item.picUrl}}" alt=""></div>
+                <span>课程</span>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- 干货美食列表 -->
+    <script id="tpl3" type="text/html">
+        {{each obj as item}}
+        <li>
+            <a href="information.html?title={{item.title}}&drysalteryFileID={{item.drysalteryFileID}}">
+                <div class="img"><img src='http://www.mffive.com:8080{{item.picUrl}}' alt=""></div>
+                <div class="information">
+                    <p>{{item.title}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+</body>
+</html>

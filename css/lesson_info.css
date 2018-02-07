@@ -1,0 +1,151 @@
+
+/* 模块一(头部视频) ----------------*/
+.model-1{
+	position: relative;
+}
+.model-1 .middle{
+	border-radius: 16px;
+	width: 81%;
+	position: absolute;
+	left: 9%;
+	top: 3.4rem;
+	color: #fff;
+}
+.model-1 .middle h1{
+	font-size: 1.5rem;
+	text-align: center;
+}
+.model-1 .m-left>ul>li{
+	width: 33.33333%;
+	height: 4rem;
+	float: left;
+	text-align: center;
+}
+.model-1 .m-left>ul>li>h2{
+	font-size: 1.2rem;
+	line-height: 2.5rem;
+	margin-top: 0.8rem;
+}
+.model-1 .m-left>ul>li>p{
+	font-size: 0.8rem;
+	color: #FFFFFF;
+}
+
+.video{
+	overflow: hidden;
+	height: 12rem;
+	position: relative;
+}
+.video .imgbgc{
+	width: 100%;height: 100%;
+}
+.video>span img{
+	width: 20px;
+	height: 22px;
+	margin: 0.4rem  0 0 0.6rem;
+}
+.v-left{
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
+}
+.v-left>a>img{
+	margin: 0.5rem 0 0 0.5rem;
+}
+.v-left>a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.v-right{
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
+}
+.video_info{
+	background-color: #fff;
+	padding: 14px 10px 34px 18px;
+	font-size:1rem;
+	position: relative;
+	color: #ABABAB;
+}
+.video_info>a{
+	position: absolute;
+	bottom: 10px;
+	left: 38%;
+	color: #FAED4D;
+}
+/* 模块二(动作视频)----------- */
+.model-2{
+	padding:15px;
+	overflow: hidden;
+	height: 9.6rem;
+	width: 100%;
+	border-top: 0.3rem solid rgba(242,242,242,1);
+	border-bottom: 0.3rem solid rgba(242,242,242,1);
+	background-color: #fff;
+}
+.model-2>h3{
+	font-weight: bold;
+	height: 1rem;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	margin-bottom: 0.9rem;
+}
+.swiper-container-k .swiper-wrapper{z-index: 0 !important;}
+.swiper-container-k .swiper-slide img{
+	border: 1px solid #000;
+	border-radius: 6px;
+	width:100%;height: 5.4rem;
+}
+/* 其他训练  视频可视大小 */
+.other_train .swiper-slide{
+	width:35% !important;
+	margin-right: 0.3rem !important;
+}
+/* -- 模块三区域 三条独白 */
+.model-3{
+	background-color: #fff;
+	/* margin-bottom: 4rem; */
+}
+.model-3 ul li{
+	padding: 0 15px 0px 15px;
+	border-bottom: 1px solid #F2F2F2;
+}
+.model-3 ul li:first-child{
+	padding-top: 0.2rem;
+}
+.model-3 ul li h2{
+	font-weight: bold;
+	line-height: 2.8rem;
+	width: 100%;
+	font-size: 1.1rem;
+	text-align: center;
+}
+.model-3 ul li p{
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+	color: #BBBBBB;
+}
+
+/* 底部栏 开始训练*/
+.takein{
+	height: 3rem;
+	line-height: 3rem;
+	width: 100%;
+	background-color: #F8E71C;
+	text-align: center;
+	font-size: 1.2rem;
+	
+}
+.takein>a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+

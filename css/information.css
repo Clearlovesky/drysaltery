@@ -1,0 +1,57 @@
+.left>a>img,.right>img{
+	margin-top: 0.8rem;
+}
+/* 主题内容 */
+.main{
+	padding: 4%;
+	width: 100%;
+	background-color: #fff;
+	margin-top: 3.3rem;
+}
+
+
+.info-r{
+	width: 5rem;
+	height: 3rem;
+	background-color: #fff;
+}
+button{
+	height: 1.6rem;
+	width: 4rem;
+	font-size: 0.7rem;
+	border-radius: 2rem;
+	border: none;
+	outline: none;
+	background-color: #F8E71C;
+	/* margin-top: 1rem; */
+	color: #fff;
+}
+.main h3{
+	width: 100%;
+	font-size: 1.5rem;
+}
+.main h4{
+	height: 2rem;
+	font-size: 1rem;
+	color: #898989;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+.main>h4>span{
+	color: #F5E518;
+}
+.main>.content{
+	width: 100%;
+	margin-top: 1rem;
+	font-size: 1rem;
+	overflow: hidden;
+	color: #898989;
+}
+.main>.content:first-letter{
+	float:left;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.showImg{
+	width: 100%;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/font-awesome.css"/>
+  <link rel="stylesheet" href="css/player.css"/>
+	<link rel="stylesheet" href="css/lesson_info.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<title>干货-课程-详情</title>
+	<script>
+      document.onreadystatechange=function(){
+          if(document.readyState=='complete'){
+              $('.loading').fadeOut();
+          }
+      }
+  </script>
+</head>
+<body>
+	<!-- 网页加载进度条 -->
+    <div class="loading">
+        <div class="pic"></div>
+    </div>
+  <!-- 模块一 区域 -->
+	<div class="model-1">
+		<!-- <div class="video">
+			<img class="imgbgc" src="images/干货切图/pic_25@3x.png" alt="">
+			<span class="v-left"><a href="lesson.html"><img src="images/ico_backbai@3x.png" alt=""></a></span>
+			<span class="v-right"><img src="images/ico_fenxiangbai@3x.png" alt=""></span>
+			<div class="middle m-left">
+                <h1>胸肌入门</h1>
+                <ul>
+                    <li>
+                        <h2>5</h2>
+                        <p>难度</p>
+                    </li>
+                    <li>
+                        <h2>12</h2>
+                        <p>分钟</p>
+                    </li>
+                    <li>
+                    <h2>199</h2>
+                    <p>千卡</p>
+                    </li>
+                </ul>
+            </div>
+		</div>
+		<div class="video_info" id="limittext">
+			<p class="content">
+				<span>对于这一最新故障新故</span>
+			</p>
+			<a class="switch_aa" href="javascript:;">查看详情 ∨</a>
+		</div> -->
+	</div>
+	<!-- 模块二 其他训练 区域 -->
+	<div class="model-2">
+		<h3>其他训练</h3>
+		<div class="playlesson">
+			<div class="swiper-container-k">
+          <div class="swiper-wrapper other_train">
+             <!--  <div class="swiper-slide">
+              	<a href="#">
+              		<img src="images/6.bmp" alt="">
+              	</a>
+              </div> -->
+          </div>
+      </div>
+		</div>
+	</div>
+	<!-- 模块三区域 三条独白 -->
+	<div class="model-3">
+		<!-- <ul>
+			<li>
+				<h2>训练建议</h2>
+				<p>对于这一最新故障，苹果官方尚未发表评论。w对于这一最新故障，苹果官方尚未发表评论。</p>
+			</li>
+			<li>
+				<h2>适合人群</h2>
+				<p>对于这一最新故障，苹果官方尚w未发表评论</p>
+			</li>
+			<li>
+				<h2>注意事项</h2>
+				<p>对于这一最新故障，苹果官方尚未w发表评论。最新故障，对于这一最新故障，，苹果官方尚未发表评论。对于这一最新故障，对苹果官方尚未发表评论。对于这一最新故障，对于这一对于这一最新故障，。</p>
+			</li>
+		</ul> -->
+	</div>
+	
+	<!-- 底部固定栏  按钮 -->
+	<div class="takein play"><a href="#">开始训练</a></div>
+
+  <!-- 视频播放器模态框 -->
+	<figure>
+	    <div class="player">
+	        <!-- <span class="close"></span> -->
+	        <!-- <video src="./video/chrome.mp4"></video>
+	        <div class="controls">
+	            <a href="javascript:;" class="switch fa fa-play"></a>
+	            全屏
+	            <a href="javascript:;" class="expand fa fa-expand"></a>
+	            进度条
+	            <div class="progress">
+	                <div class="loaded"></div>
+	                <div class="line"></div>
+	                <div class="bar"></div>
+	            </div>
+	            <div class="timer">
+	                <span class="current">00:00:00</span> /
+	                <span class="total">00:00:00</span>
+	            </div>
+	        </div> -->
+	    </div>
+	</figure>
+  <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/lesson_info.js"></script>
+
+	<!-- 课程详情头部渲染 -->
+	<script type="text/html" id="headerLesson">
+       <div class="video">
+					<img class="imgbgc" src="http://www.mffive.com:8080{{obj.picUrl}}" alt="">
+	        <span class="v-left"><a href="drysaltery.html"><img src="images/干货切图/ico_backbai@3x.png" alt=""></a></span>
+	        <span class="v-right"></span>
+	        <div class="middle m-left">
+	        	<h1>555</h1>
+	            <ul>
+	                <li>
+	                    <h2 class="level">等级</h2>
+	                    <p>难度</p>
+	                </li>
+	                <li>
+	                    <h2>{{obj.time}}</h2>
+	                    <p>分钟</p>
+	                </li>
+	                <li>
+	                    <h2>{{obj.kilocalorie}}</h2>
+	                    <p>千卡</p>
+	                </li>
+	            </ul>
+	       </div>
+			</div>
+			<div class="video_info" id="limittext">
+				<p class="content">
+					<span>{{obj.content}}</span>
+				</p>
+				<a class="switch_aa" href="javascript:;">查看详情 ∨</a>
+			</div>
+	</script>
+
+	<!-- 视频播放渲染 -->
+	<script type="text/html" id="watch">
+	    <span class="close"><img src="images/干货切图/baiX.png" alt=""></span>
+	    <video src="http://www.mffive.com:8080{{obj.fileUrl}}"></video>
+	    <div class="controls">
+            <a href="javascript:;" class="switch fa fa-play"></a>
+             <!-- 进度条  -->
+            <div class="progress">
+                <div class="loaded"></div>
+                <div class="line"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="timer">
+                <span class="current">00:00:00</span> /
+                <span class="total">00:00:00</span>
+            </div>
+        </div>
+	</script>
+	<!-- 其他训练 渲染 -->
+	<script type="text/html" id="othertrain">
+	{{each obj as item}}
+	    <div class="swiper-slide">
+	    	<a href="lesson_info.html?title={{item.title}}&drysalteryFileID={{item.drysalteryFileID}}">
+	    		<img src="http://www.mffive.com:8080{{item.picUrl}}" alt="">
+	    	</a>
+      </div>
+  {{/each}}
+	</script>
+
+	<!-- 三条独白渲染 (训练建议 适合人群 注意事项)-->
+	<script type="text/html" id="three_words">
+		<ul>
+			<li>
+				<h2>训练建议</h2>
+				<p>{{obj.trainProposal}}</p>
+			</li>
+			<li>
+				<h2>适合人群</h2>
+				<p>{{obj.crowdSuits}}</p>
+			</li>
+			<li>
+				<h2>注意事项</h2>
+				<p>{{obj.attention}}</p>
+			</li>
+		</ul>
+	</script>
+</body>
+</html> 
